@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+        File: /~lcalmeid/index.html
+        91.461 Assignment: Styling Your First Web Page With CSS
+        Ludmyla Almeida, student at UML , ludmyla_almeida@student.uml.edu
+        Copyright (c) 2019 by Ludmyla C. Almeida. All rights reserved. May be
+        freely copied or excerpted for educational purposes with credit to the
+        author.
+        updated by Ludmyla on October 9, 2019 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Ludmyla Almeida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav id="navbar" class="navbar mb-5 fixed-top">
+        <a class="logo" href="index.html">Ludmyla.</a>
+        <div class="navbar">
+            <a class="nav-item nav-link active" href="#intro">Home</a>
+            <a class="nav-item nav-link" href="#AboutMe">About Me</a>
+            <a class="nav-item nav-link" href="#Assigments">Assignments</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- First section - introduction -->
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col text-block typewriter">
+                    <h2>System.out.println(<span class="pink">"Hello World"</span>);</h2>
+                    <h2 class="mt-5">Welcome to my Universe.</h2>
+                    <h2>Hi, My name is <span class="pink">Ludmyla Almeida</span><br></h2>
+                    <h2> I'm a computer science student & an aspiring product designer.</h2>
+                </div>
+                <!-- static ludmyla on the moon image -->
+                <div class="col">
+                    <img class="moon" src="img/moon.png" alt="moon">
+                </div>
+            </div>
+        </div>
+
+        <!-- Social media icons fixed position -->
+        <div class="social-media">
+            <ul>
+                <li>
+                    <!-- GITHUB -->
+                    <a href="https://github.com/ludmylaalmeida" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LINKEDIN -->
+                    <a href="https://www.linkedin.com/in/ludmyla-almeida/" class="black" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <!-- INSTAGRAM -->
+                    <a href="https://www.instagram.com/lud.mylaa" class="black" target="_blank"><i
+                            class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <!-- FACEBOOK -->
+                    <a href="https://www.facebook.com/ludmylaa " class="black" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Second section - About me-->
+    <section id="AboutMe" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="mb-5 title">About Me</h2>
+                    <p>I'm Ludmyla Almeida, an aspiring <span class="pink">front end web developer </span>based in
+                        Boston, MA who enjoys building things that live
+                        on the internet. I am passionate about building easy to use, user-friendly websites and
+                        applications. <br></p>
+
+                    <p>I'm currently studying Computer Science at <span class="pink">University of Massachusetts
+                            Lowell</span>
+                        where I work on a wide variety of interesting and meaningful projects on a daily basis.</p>
+
+                    <h5>Here's a few technologies I've been working with recently:</h5>
+
+                    <ul class="skills">
+                        <li>HTML & CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Angular</li>
+                        <li>GIT</li>
+                        <li>Sketch</li>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Third section - assignment -->
+    <section id="Assigments" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+        data-aos-mirror="true" data-aos-once="false">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="mb-5 title">Graphical User Interface Assigments</h2>
+                        <h3 class="mb-2 mt-3">Assignment 2</h3>
+                        <a href="assignments/assignment2/index.html"> <img class="img-gui center"
+                                src="img/assignment2.png" alt="assignment"></a>
+
+                        <h3 class="mb-2 mt-5">Assignment 3</h3>
+                        <a href="assignments/assignment3/index.html"> <img class="img-gui " src="img/assignment3.png"
+                                alt="assignment"></a>
+                        <h3 class="mb-2 mt-5">Assignment 4</h3>
+                        <a href="index.html"></a>
+                        <img class="img-gui" src="img/assignment4.png" alt="assignment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth section - contact me -->
+    <section id="contact" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+        data-aos-mirror="true" data-aos-once="false">
+        <form class="mt-5 mb-5 container">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-6">
+                        <h2>Get In Touch</h2>
+                        <h6 class="pink mb-5 font-weight-bold">I promise I'm cool.</h6>
+                        <h5 class="mb-5">Although I'm not currently looking for freelance opportunities, my inbox is always
+                            open.
+                            Whether for a potential project or just to say hi, I'll try my best to answer your email!
+                        </h5>
+                        <a href="mailto:almeida.ludmyla@gmail.com" target="_blank" class="main-btn">Say Hello</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <code>design & built by Ludmyla Almeida</code>
+        <!-- W3C Validator -->
+        <div>
+                <img class="W3C" src="img/W3C.png" alt="W3C">
+            </div>
+    </footer>
+
+    <!-- js scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Animate on Scroll - new library I found online for animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- main js file -->
+    <script src="main.js"></script>
+</body>
+
+</html>

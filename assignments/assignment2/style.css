@@ -1,0 +1,66 @@
+     /* File: /~lcalmeid/style.css
+        91.461 Assignment: Creating Your First Web Page
+        Ludmyla Almeida, student at UML , ludmyla_almeida@student.uml.edu
+        Copyright (c) 2019 by Ludmyla C. Almeida. All rights reserved. May be
+        freely copied or excerpted for educational purposes with credit to the
+        author.
+        updated by Ludmyla on September 16, 2019 */
+
+.main-color {
+  color: #ec1966;
+}
+
+.main-bg-color {
+  background-color: #ec1966;
+}
+
+.bg-black{
+  background-color: #212120;
+}
+
+.white-color {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #611430 !important;
+}
+.text-block a:hover {
+  text-decoration: none;
+}
+
+.bike {
+  width: 80%;
+  height: auto;
+}
+
+.text-block {
+  margin-top: 20vh;
+}
+
+.blue {
+  color: #0469b1;
+}
+
+.main-btn{
+  background-color: #ec1966!important;
+  color: #fff;
+  text-decoration: none;
+  border-color: transparent;
+  border-radius: 20px;
+  padding: 5px 20px;
+} 
+
+.main-btn:hover {
+  background-color: #611430!important;
+
+}
+
+.logo{
+  width: 15%;
+  height: auto;
+}

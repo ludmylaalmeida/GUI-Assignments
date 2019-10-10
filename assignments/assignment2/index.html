@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+        File: /~lcalmeid/index.html
+        91.461 Assignment: Creating Your First Web Page
+        Ludmyla Almeida, student at UML , ludmyla_almeida@student.uml.edu
+        Copyright (c) 2019 by Ludmyla C. Almeida. All rights reserved. May be
+        freely copied or excerpted for educational purposes with credit to the
+        author.
+        updated by Ludmyla on September 16, 2019
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Ludmyla's website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar mb-5 main-bg-color">
+        
+        <div class="navbar">
+            <a class="nav-item nav-link active white-color" href="#">Home</a>
+            <a class="nav-item nav-link white-color" href="assignment.html">Assignments</a>
+            <a class="nav-item nav-link white-color" href="https://github.com/ludmylaalmeida" target="_blank">GitHub</a>
+            <a class="nav-item nav-link white-color" href="#contact">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col text-block">
+                <h1>cout &lt;&lt; "Hello World" ;</h1>
+                <h2>My name is <span class="main-color">Ludmyla Almeida.</span><br> I'm
+                    a computer science student at <a class="blue" href="https://www.uml.edu/" target="_blank">University
+                        of Massachusetts Lowell.</a></h2>
+            </div>
+            <div class="col">
+                <img class="bike" src="img/Ludmyla-bike.svg" alt="Welcome">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <section id="contact">
+        <form class="mt-5 mb-5 container">
+            <h1>Contact Me :)</h1>
+            <h6 class="main-color mb-5">I promise I'm cool.</h6>
+            <div class="form-group mt-3">
+                <label>First Name</label>
+                <input type="text" class="form-control col-5" placeholder="Your Name">
+            </div>
+            <div class="form-group mt-3">
+                <label>Last Name</label>
+                <input type="text" class="form-control col-5" placeholder="Your Name">
+            </div>
+            <div class="form-group mt-3">
+                <label>Email</label>
+                <input type="email" class="form-control col-5" placeholder="Email address">
+            </div>
+            <div class="form-group mt-3">
+                <label>Subject</label>
+                <textarea class="form-control col-5" placeholder="thoughts?"></textarea>
+            </div>
+            <!-- TODO: Implement mailto functionality -->
+            <input type="submit" class="main-btn mt-3" value="Submit">
+        </form>
+    </section>
+
+</body>
+
+</html>

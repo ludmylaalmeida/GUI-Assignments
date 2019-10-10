@@ -1,0 +1,236 @@
+/* File: /~lcalmeid/style.css
+        91.461 Assignment: Styling Your First Web Page With CSS
+        Ludmyla Almeida, student at UML , ludmyla_almeida@student.uml.edu
+        Copyright (c) 2019 by Ludmyla C. Almeida. All rights reserved. May be
+        freely copied or excerpted for educational purposes with credit to the
+        author.
+        updated by Ludmyla on October 9, 2019 */
+
+/* main style */
+html,
+body {
+  box-sizing: border-box;
+  background: url(img/bg-space.png) center center no-repeat;
+  background-attachment: fixed;
+  overflow-x: scroll;
+  background-size: cover;
+  background-color: #040431!important;
+}
+
+body {
+  color: #fff !important;
+}
+
+.logo {
+  font-size: 2em;
+  color: #fff;
+}
+
+section {
+  padding: 20px 0px;
+  display: flex;
+}
+
+p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.container:first-of-type {
+  margin-top: 30vh;
+}
+
+footer {
+  background-color: #040431;
+  bottom: 0;
+  z-index: 1000;
+  padding: 2px;
+  margin-bottom: 0;
+  text-align: center;
+  position: sticky;
+}
+
+
+/* colors */
+.pink {
+  color: #ec1966;
+}
+
+.main-bg-color {
+  background-color: #ec1966;
+}
+
+.bg-black {
+  background-color: #212120;
+}
+
+.white-color {
+  color: #fff;
+}
+
+/* image style */
+.moon {
+  width: 35%;
+  height: auto;
+  position: fixed;
+  bottom: -200px;
+  z-index: 0;
+  text-align: center;
+}
+
+.img-gui {
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+
+.W3C{
+  width: 5%;
+  height: auto;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+/* navbar */
+.navbar a {
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+}
+
+.header-scrolled {
+  height: 70px;
+  padding: 15px 0;
+  background-image: linear-gradient(90deg, #60308b, #a949a3);
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  color: #ec1966 !important;
+  transition: width 5s;
+  transition-timing-function: ease;
+}
+
+/* list */
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.skills li::before {
+  content: "▹";
+  position: relative;
+  left: 0px;
+  color: #ec1966;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* a tag */
+a:hover {
+  color: #ec1966 !important;
+}
+
+.text-block {
+  margin-top: 20vh;
+}
+
+.text-block a:hover {
+  text-decoration: none;
+}
+
+/* button */
+.main-btn {
+  background-color: #ec1966;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 7px 20px;
+  font-weight: bold;
+}
+
+.main-btn:hover {
+  background-color: #040431;
+  border: 1px solid #ec1966;
+  color: #ec1966;
+  text-decoration: none;
+}
+
+/* social media links  */
+.social-media {
+  position: fixed;
+  margin: 10px;
+  font-size: 1.5em;
+  color: rgb(105, 95, 95);
+  bottom: 0px;
+  left: 20px;
+}
+
+.social-media a {
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.social-media::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90px;
+  background-color: #fff;
+  margin: 0px auto;
+  z-index: 1;
+}
+
+.social-media li {
+  padding-bottom: 20px;
+}
+
+.social-media li:hover {
+  transform: translateY(-3px);
+}
+
+/* The typing effect
+    source: https://css-tricks.com/snippets/css/typewriter-effect/
+*/
+
+.typewriter h2:first-child {
+  width: 100%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #ec1966; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ec1966;
+  }
+}
+
+/* Animation on scroll css */
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
